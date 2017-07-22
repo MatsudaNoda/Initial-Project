@@ -1,0 +1,56 @@
+<div class="col-md-2 col-lg-3 col-sm-1"></div>
+<form class="col-md-8 col-lg-6 col-sm-10 shadow-box"  ng-class="animationClass" >
+	<h1>What is your Info?</h1>
+    <h3>(Don't worry! Your info will not be shared until you give us the okay)</h3>
+    <div class="col-md-2" ></div>
+    <div class="col-md-8" style="padding: 0px;">
+        <div class="form-row">
+        	<div class="col-md-4 col-sm-2 col-xs-2" >
+        		<span >First Name:</span>
+        	</div>
+        	<div class="col-md-8 col-sm-10 col-xs-10">
+        		<input ng-model="info.firstname" >
+        	</div>
+        </div>
+        <div class="form-row">
+        	<div class="col-md-4 col-sm-2 col-xs-2" >
+        		<span >Last Name:</span>
+        	</div>
+        	<div class="col-md-8 col-sm-10 col-xs-10">
+        		<input ng-model="info.lastname" >
+        	</div>
+        </div>
+        <div class="form-row">
+        	<div class="col-md-4 col-sm-2 col-xs-2" >
+        		<span>Email:</span>
+        	</div>
+        	<div class="col-md-8 col-sm-10 col-xs-10">
+        		<input ng-model="info.email" type="email">
+        	</div>
+        </div>
+        <div class="form-row">
+        	<div class="col-md-4 col-sm-2 col-xs-2" >
+        		<span >Phone:</span>
+        	</div>
+        	<div class="col-md-8 col-sm-10 col-xs-10">
+        		<input type='tel' ng-model="info.phone">
+        	</div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 col-sm-2 col-xs-2" >
+                <span>Best way to contact you:</span>
+            </div>
+            <div class="col-md-8 col-sm-10 col-xs-10">
+                <select class="sel-style" ng-model="info.bestway">
+                    <option value="" selected>Please select a way</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <span ng-click="onSelect({id:51})"><button class="button-style" style="width: 40%; margin-left: 30%; margin-top: 30px;">Send</button></span>
+
+    <div class="col-md-2"></div>
+</form>
+<div class="col-md-2 col-lg-3 col-sm-1"></div>
